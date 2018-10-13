@@ -1,0 +1,15 @@
+.articles{
+    width: 100%;
+    float: left;
+}
+
+.contentOfArticles{
+    float: left;
+    width: 80%;
+}
+
+.imageOfArticles{
+    float: right;
+    width: 20%;
+}
+
