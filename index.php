@@ -1,11 +1,15 @@
+<?php
+	include "function.php";
+ ?>
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Newspaper web</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="myCSS.css">
 <body id="myPage">
 
 <!-- Sidebar on click -->
@@ -52,7 +56,7 @@
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
-  <img src="/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <img src="/Images/Home.jpg" alt="homePic" style="width:100%;min-height:350px;max-height:600px;">
   <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
   </div>
@@ -170,26 +174,26 @@
 
 <!-- Pricing Row -->
 <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-    <h2>PRICING</h2>
-    <p>Choose a pricing plan that fits your needs.</p><br>
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">Basic</p>
-        </li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
-        <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
+    <h2>ARTICLES</h2>
+    <p>Choose an article to enjoy!</p><br>
+    <?php echo sources() ?>
+    <!-- <div class="w3-third w3-margin-bottom articles">
+        <div class="contentOfArticles">
+            <ul>
+                
+                <li>sources:</li>
+                <li><a >title</a></li>
+                <li><h2>subtitle</h2></li>
+                <li><h4>author</h4></li>
+                <li><p>contents(bref)</p></li>
+            </ul>
+            
+        </div>
+        <div class="imageOfArticles">
+            <img src="Images/Home.jpg" alt="test" style="height: 200px" >
+        </div>
+    </div> -->
+<!--
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-hover-shadow">
@@ -228,6 +232,7 @@
         </li>
       </ul>
     </div>
+-->
 </div>
 
 <!-- Contact Container -->
@@ -235,14 +240,14 @@
   <div class="w3-row">
     <div class="w3-col m5">
     <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <h3>Location</h3>
-      <p>230 Jesse Hall <br/> Columbia, MO.</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Columbia, US</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  217-381-6949</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  kl2cb@mail.missouri.edu</p>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
     </div>
     <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" method = "post" action="email_me.php">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
       <div class="w3-section">      
         <label>Name</label>
         <input class="w3-input" type="text" name="Name" required>
