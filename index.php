@@ -87,28 +87,28 @@
 <div class="w3-row"><br>
 
 <div class="w3-quarter">
-  <img src="/PIC/Bin.jpg" alt="Bin" style="width:50%" class="w3-rectangle w3-hover-opacity">
+  <img src="/Images/Bin.jpg" alt="Bin" style="width:50%" class="w3-rectangle w3-hover-opacity">
   <h3>Youngbin Ha</h3>
   <p>Senior/CS</p>
   <p>yh9kb@mail.missouri.edu</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="/PIC/Yan.jpg" alt="Yan" style="width:50%" class="w3-rectangle w3-hover-opacity">
+  <img src="/Images/Yan.jpg" alt="Yan" style="width:50%" class="w3-rectangle w3-hover-opacity">
   <h3>Yan Yang</h3>
   <p>Senior/IT</p>
   <p>yyq34@mail.missouri.edu</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="/PIC/Eric.jpg" alt="Eric" style="width:50%" class="w3-rectangle w3-hover-opacity">
+  <img src="/Images/Eric.jpg" alt="Eric" style="width:50%" class="w3-rectangle w3-hover-opacity">
   <h3>Eric Lin</h3>
   <p>Sophomore/CS</p>
   <p>kl2cb@mail.missouri.edu</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="/PIC/Tim.jpg" alt="Tim" style="width:50%" class="w3-rectangle w3-hover-opacity">
+  <img src="/Images/Tim.jpg" alt="Tim" style="width:50%" class="w3-rectangle w3-hover-opacity">
   <h3>Tim Kwon</h3>
   <p>Junior/CS</p>
   <p>jk4g2@mail.missouri.edu</p>
