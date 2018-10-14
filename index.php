@@ -1,6 +1,6 @@
 <?php
-	include "function.php";
- ?>
+    include "function.php";
+    ?>
 <!DOCTYPE html>
 <html>
 <title>Newspaper web</title>
@@ -14,70 +14,65 @@
 
 <!-- Sidebar on click -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
-  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+<i class="fa fa-remove"></i>
+</a>
+<a href="#" class="w3-bar-item w3-button">Link 1</a>
+<a href="#" class="w3-bar-item w3-button">Link 2</a>
+<a href="#" class="w3-bar-item w3-button">Link 3</a>
+<a href="#" class="w3-bar-item w3-button">Link 4</a>
+<a href="#" class="w3-bar-item w3-button">Link 5</a>
 </nav>
 
 <!-- Navbar -->
 <div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-    </div>
-  </div>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
- </div>
+<div class="w3-bar w3-theme-d2 w3-left-align">
+<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+<a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+<a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+<a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+<a href="#article" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Article</a>
+<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+<div class="w3-dropdown-hover w3-hide-small">
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">Team</a>
-    <a href="#work" class="w3-bar-item w3-button">Work</a>
-    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    <a href="#" class="w3-bar-item w3-button">Search</a>
-  </div>
+</div>
+<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+<a href="#team" class="w3-bar-item w3-button">Team</a>
+<a href="#work" class="w3-bar-item w3-button">Work</a>
+<a href="#article" class="w3-bar-item w3-button">Article</a>
+<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+<a href="#" class="w3-bar-item w3-button">Search</a>
+</div>
 </div>
 
 <!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="/Images/Home.jpg" alt="homePic" style="width:100%;min-height:350px;max-height:600px;">
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
-  </div>
+<div id="imageHeader" class="w3-display-container w3-animate-opacity">
+<img src="./Images/Home.jpg" alt="homePic" style="width:100%;min-height:350px;max-height:600px;">
+<div class="w3-container w3-display-bottomleft w3-margin-bottom">
+
+</div>
 </div>
 
 <!-- Modal -->
 <div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h4>Oh snap! We just showed you a modal..</h4>
-      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-    </header>
-    <div class="w3-container">
-      <p>Cool huh? Ok, enough teasing around..</p>
-      <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
-    </div>
-    <footer class="w3-container w3-teal">
-      <p>Modal footer</p>
-    </footer>
-  </div>
+<div class="w3-modal-content w3-card-4 w3-animate-top">
+<header class="w3-container w3-teal w3-display-container">
+<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+<h4>Oh snap! We just showed you a modal..</h4>
+<h5>Because we can <i class="fa fa-smile-o"></i></h5>
+</header>
+<div class="w3-container">
+<p>Cool huh? Ok, enough teasing around..</p>
+<p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
+</div>
+<footer class="w3-container w3-teal">
+<p>Modal footer</p>
+</footer>
+</div>
 </div>
 
 <!-- Team Container -->
@@ -87,31 +82,31 @@
 <div class="w3-row"><br>
 
 <div class="w3-quarter">
-  <img src="/Images/Bin.jpg" alt="Bin" style="width:50%" class="w3-rectangle w3-hover-opacity">
-  <h3>Youngbin Ha</h3>
-  <p>Senior/CS</p>
-  <p>yh9kb@mail.missouri.edu</p>
+<img src="./Images/Bin.jpg" alt="Bin" style="width:70%" class="w3-rectangle w3-hover-opacity">
+<h3>Youngbin Ha</h3>
+<p>Senior/CS</p>
+<p>yh9kb@mail.missouri.edu</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="/Images/Yan.jpg" alt="Yan" style="width:50%" class="w3-rectangle w3-hover-opacity">
-  <h3>Yan Yang</h3>
-  <p>Senior/IT</p>
-  <p>yyq34@mail.missouri.edu</p>
+<img src="./Images/Yan.jpg" alt="Yan" style="width:70%" class="w3-rectangle w3-hover-opacity">
+<h3>Yan Yang</h3>
+<p>Senior/IT</p>
+<p>yyq34@mail.missouri.edu</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="/Images/Eric.jpg" alt="Eric" style="width:50%" class="w3-rectangle w3-hover-opacity">
-  <h3>Eric Lin</h3>
-  <p>Sophomore/CS</p>
-  <p>kl2cb@mail.missouri.edu</p>
+<img src="./Images/Eric.jpg" alt="Eric" style="width:70%" class="w3-rectangle w3-hover-opacity">
+<h3>Eric Lin</h3>
+<p>Sophomore/CS</p>
+<p>kl2cb@mail.missouri.edu</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="/Images/Tim.jpg" alt="Tim" style="width:50%" class="w3-rectangle w3-hover-opacity">
-  <h3>Tim Kwon</h3>
-  <p>Junior/CS</p>
-  <p>jk4g2@mail.missouri.edu</p>
+<img src="./Images/Tim.jpg" alt="Tim" style="width:70%" class="w3-rectangle w3-hover-opacity">
+<h3>Tim Kwon</h3>
+<p>Junior/CS</p>
+<p>jk4g2@mail.missouri.edu</p>
 </div>
 </div>
 </div>
@@ -119,197 +114,108 @@
 <!-- Work Row -->
 <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 
-<div class="w3-quarter">
-<h2>Our Work</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 1</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 2</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 3</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
+<div class="w3-quarter" id=workDescription>
+<h2>Project Description</h2>
+<p> "We made a website that shows several major articles and what hot issues today are. Using News API, user can see the worldwide news in one place; also, they can email to factchecker website which answeres them by checking if the new is true or not. We connected the api by using php and made it as a function."</p>
 </div>
 
 </div>
 
 <!-- Container -->
 <div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
+<a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+style="position:absolute;top:-28px;right:24px">+</a>
 </div>
 
-<!-- Pricing Row -->
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-    <h2>ARTICLES</h2>
-    <p>Choose an article to enjoy!</p><br>
-    <?php echo sources() ?>
-    <!-- <div class="w3-third w3-margin-bottom articles">
-        <div class="contentOfArticles">
-            <ul>
-                
-                <li>sources:</li>
-                <li><a >title</a></li>
-                <li><h2>subtitle</h2></li>
-                <li><h4>author</h4></li>
-                <li><p>contents(bref)</p></li>
-            </ul>
-            
-        </div>
-        <div class="imageOfArticles">
-            <img src="Images/Home.jpg" alt="test" style="height: 200px" >
-        </div>
-    </div> -->
+<!-- Article Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="article">
+<h2>ARTICLES</h2>
+<p>Choose an article to enjoy!</p><br>
+<?php echo sources() ?>
+<!-- <div class="w3-third w3-margin-bottom articles">
+<div class="contentOfArticles">
+<ul>
+
+<li>sources:</li>
+<li><a >title</a></li>
+<li><h2>subtitle</h2></li>
+<li><h4>author</h4></li>
+<li><p>contents(bref)</p></li>
+</ul>
+
+</div>
+<div class="imageOfArticles">
+<img src="Images/Home.jpg" alt="test" style="height: 200px" >
+</div>
+</div> -->
 <!--
 
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">Pro</p>
-        </li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
-        <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
+<div class="w3-third w3-margin-bottom">
+<ul class="w3-ul w3-border w3-hover-shadow">
+<li class="w3-theme-l2">
+<p class="w3-xlarge">Pro</p>
+</li>
+<li class="w3-padding-16"><b>25GB</b> Storage</li>
+<li class="w3-padding-16"><b>25</b> Emails</li>
+<li class="w3-padding-16"><b>25</b> Domains</li>
+<li class="w3-padding-16"><b>Endless</b> Support</li>
+<li class="w3-padding-16">
+<h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
+<span class="w3-opacity">per month</span>
+</li>
+<li class="w3-theme-l5 w3-padding-24">
+<button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+</li>
+</ul>
+</div>
 
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">Premium</p>
-        </li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
-        <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
+<div class="w3-third w3-margin-bottom">
+<ul class="w3-ul w3-border w3-hover-shadow">
+<li class="w3-theme">
+<p class="w3-xlarge">Premium</p>
+</li>
+<li class="w3-padding-16"><b>50GB</b> Storage</li>
+<li class="w3-padding-16"><b>50</b> Emails</li>
+<li class="w3-padding-16"><b>50</b> Domains</li>
+<li class="w3-padding-16"><b>Endless</b> Support</li>
+<li class="w3-padding-16">
+<h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
+<span class="w3-opacity">per month</span>
+</li>
+<li class="w3-theme-l5 w3-padding-24">
+<button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
+</li>
+</ul>
+</div>
 -->
 </div>
 
 <!-- Contact Container -->
 <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <h3>Location</h3>
-      <p>230 Jesse Hall <br/> Columbia, MO.</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Columbia, US</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  217-381-6949</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  kl2cb@mail.missouri.edu</p>
-    </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" method = "post" action="email_me.php">
-      <div class="w3-section">      
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">      
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">      
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
-    </div>
-  </div>
+<div class="w3-row">
+<div class="w3-col m5">
+<div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Email to Fact Check</span></div>
+<h5>FactCheck.org is one of the famous fact checking web sites</h5>
+<p> Write a question to them and they will answer it.</p>
+</div>
+<div class="w3-col m7">
+<form class="w3-container w3-card-4 w3-padding-16 w3-white" action = "mailto: Editor@FactCheck.org" method = "post">
+<p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"> Click Send button to email to the organization</i><button type="submit" class="w3-button w3-right w3-theme">Send</button></p>
+</form>
+</div>
+</div>
 </div>
 
-<!-- Google Maps -->
-<div id="googleMap" style="width:100%;height:420px;"></div>
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<p>Reference by: newsapi.org, W3 school, starigniter.com</p>
 
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
+<div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+<span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+<a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+<i class="fa fa-chevron-circle-up"></i></span></a>
+</div>
 </footer>
 
 <script>
@@ -331,7 +237,7 @@ function openNav() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
-    } else { 
+    } else {
         x.className = x.className.replace(" w3-show", "");
     }
 }

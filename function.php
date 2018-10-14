@@ -21,7 +21,7 @@
 			            
 			        </div>
 			        <div class="imageOfArticles">
-			            <img src="'.$sites['urlToImage'].'" alt="test" style="height: 200px" >
+			            <img src="'.$sites['urlToImage'].'" alt="test" width:400px>
 			        </div>
 			    </div>';
 		}

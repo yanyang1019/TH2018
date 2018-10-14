@@ -1,15 +1,50 @@
+
+#workDescription{
+    width: 100%;
+}
+
 .articles{
     width: 100%;
     float: left;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
 
-.contentOfArticles{
-    float: left;
-    width: 80%;
+div img{
+    height: 250px;
+}
+
+
+div a {
+    font-size: 23px;
 }
 
 .imageOfArticles{
-    float: right;
-    width: 20%;
+    float: left;
+    padding: 15px;
 }
 
+ul{
+    list-style: none;
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+.contentOfArticles{
+    float: left;
+    width: 100%;
+}
+
+.imageOfArticles{
+    float: left;
+    width: 100%;
+}
+    
+}
+
+#imageHeader img{
+    height: 100%;
+    min-height:350px;
+    max-height:600px;
+}
+  
